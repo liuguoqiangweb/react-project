@@ -1,0 +1,52 @@
+每日一练：
+把项目中前两步搞定！
+
+(9:20 - 9:40)
+1、准备工作
+
+启动apache和mysql
+
+2、搭建项目架子
+(使用给大家提供的新的index.android.js)
+
+①在app目录下创建components目录，在components目录中，创建project目录
+②在project目录中创建login.js main.js productList.js三个文件
+③在index.android.js中配置路由词典，让默认访问login.js
+
+
+3、实现具体页面需求
+
+	3.1 Login (10:40 - 10:55)
+		①完成基本的页面要求
+		②点击登录，要完成与服务器端的通信
+		http://172.163.**.**/admin/data/user/login.php
+		③点击登录的同时，能够显示一个AcitivityIndicator，3s之后关掉AcitivityIndicator
+	
+	3.2 Main(14:25 - 14:50)
+		实现第一行的布局
+			FlexBox(
+				flexDirection
+				justifyContent
+				alignItems
+			)
+
+			StyleSheet
+		
+		图片是可以被点击的！、
+		点击商品管理--》跳转到productList
+
+	3.3 ProductList
+			①从服务器端加载产品列表
+			②将服务器端的返回的数据显示在FlatList
+			③点击列表项，能够弹窗显示当前商品售卖的个数
+
+	3.4 用户管理	
+			准备工作：	
+					①新建userList.js 
+					②配置路由地址
+			1、点击main中的用户管理，跳转到用户列表
+			2、从服务器端加载用户列表
+			3、将服务器端的返回的数据显示在FlatList
+
+	每日一练：
+		完成所有的组件类的创建、配置、使用
